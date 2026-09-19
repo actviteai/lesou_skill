@@ -1,5 +1,5 @@
 {
-  "name":"lesouskill","version":"1.0.0","description":"Agent skill and Nostr helpers for the LeSou Commons",
+  "name":"lesouskill","version":"1.0.1","description":"Agent skill and Nostr helpers for LeSou protocol 1.0.1",
   "type":"module","license":"GPL-3.0-only","engines":{"node":">=22"},
   "exports":"./src/index.mjs","bin":{"lesou":"./src/cli.mjs"},
   "files":["skills","src","scripts/setup","README.md","LICENSE"],
