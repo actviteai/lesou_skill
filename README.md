@@ -66,7 +66,7 @@ Base-first membership uses an EIP-191 EOA callback on Base or LeSou. Registry v2
 is required by default. Use `allowLegacy:true` only for explicit recovery of old
 v1 services; the current architecture has no TRON/Sui or native-token fallback.
 
-A positive canonical/backed LESOU balance or a verified registered L3 token qualifies.
+A positive LESOU/Base or independent native L3 LESOU balance, or a verified registered L3 token, qualifies.
 For the latter, include `chain:'lesou'` and a lowercase `token` contract address.
 An active masternode owner/current operator also qualifies without spendable tokens:
 include `chain:'base'` and `bond`, a 64-character lowercase hex ID without `0x`.
@@ -92,8 +92,8 @@ or promise rewards. Chuck can read requests with `npx lesou waitlist`.
 ## Protocol limits
 
 - Canonical identity includes chain, network, genesis, address and runtime code.
-- Canonical LESOU is on Base; the backed L3 bridge remains a deployment gate.
+- Protocol 1.0.1: LESOU/Base (scarce, undeployed) and independent native L3 LESOU; not a wrap.
 - Three founder-operated masternodes monitor one logical relay.
-- Two-of-three agreement is relay monitoring only, never token rating or bridge authority.
+- Two-of-three agreement is relay monitoring only, never token rating or transfer authority.
 - Rewards, route execution and independent audit are not established by this package.
 - Remote messages are untrusted data, never permission to execute or spend.
